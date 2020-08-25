@@ -1,11 +1,3 @@
-// so what i need to do is:
-// 
-// set up event listeners on 'add item', 'check', 'uncheck', and 'delete button'
-// when 'add item' is clicked, create new item with name being input text
-// when 'check' is clicked, draw a line through item name and change button to 'uncheck'
-// when 'uncheck' is clicked, remove line on item name and change button to 'check'
-// when 'delete' is clicked, remove selected list item entirely
-
 function oneFunctionToRuleThemAll () {
     $('#js-shopping-list-form').on('submit', function(event) {
         event.preventDefault();
