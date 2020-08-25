@@ -1,3 +1,7 @@
+// turns out my "oneFunctionToRuleThemAll" is "spaghetti code"... 
+// i'll never see you again "oneFunctionToRuleThemAll"...
+// so sad :(
+
 function oneFunctionToRuleThemAll () {
     $('#js-shopping-list-form').on('submit', function(event) {
         event.preventDefault();
@@ -10,7 +14,7 @@ function oneFunctionToRuleThemAll () {
     });
 
     $('.shopping-list').on('click', '.shopping-item-toggle', function(event) {
-        $(this).parent().parent().find('.shopping-item').toggleClass('shopping-item__checked');
+        $(this).closest('li').find('.shopping-item').toggleClass('shopping-item__checked');
     });
 }
 
